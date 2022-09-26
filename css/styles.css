@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#categories-cards {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 1rem;
+  padding: 5rem 1rem 3rem;
+  background-color: hsla(270, 100%, 13%, 1);
+  background-image: radial-gradient(
+      at 67% 0%,
+      hsla(262, 100%, 8%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 96% 4%, hsla(270, 84%, 22%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(270, 73%, 34%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(272, 62%, 46%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(273, 67%, 58%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(274, 100%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(278, 100%, 83%, 1) 0px, transparent 50%);
+}
+
+.categories {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.7rem;
+  height: 35vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-family: "Varela Round", sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  flex: 1;
+  transition: 0.5s all;
+}
+
+.categories h3 {
+  margin-left: 0.8rem;
+}
+
+.categories:hover {
+  filter: saturate(60%);
+  filter: contrast(130%);
+  flex: 1.5;
+  color: #e0aaff;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-title {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-family: "Share Tech", sans-serif;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.75);
+  /* text-shadow: 4px 4px 2px #240046; */
+}
+
+.peripherals {
+  background-image: url(images/peripherals.png);
+}
+
+.notebooks {
+  background-image: url(images/notebooks.png);
+}
+
+.chairs {
+  background-image: url(images/chair2.png);
+}
+
+.consoles {
+  background-image: url(images/consoles2.png);
+}
+
+.monitors {
+  background-image: url(images/monitors.jpg);
+}
+
+.graphics-cards {
+  background-image: url(images/graphics-card.png);
+}
