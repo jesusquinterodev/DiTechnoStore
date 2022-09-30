@@ -1,3 +1,4 @@
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,146 @@ body {
   background-color: #7812b3;
 }
 
+/* Navbar */
+nav {
+  background-color: #10002b;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem 5rem;
+  gap: 5rem;
+  position: relative;
+  height: 12vh;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  width: 4rem;
+  margin-left: 1rem;
+}
+
+/* Buscador */
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.search-term {
+  width: 100%;
+  border: 3px solid #7b2cbf;
+  font-family: "Share Tech", sans-serif;
+  font-size: 1.25rem;
+  border-right: none;
+  padding: 0.3125rem;
+  height: 3rem;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.search-term:focus {
+  color: #7b2cbf;
+}
+
+.searchButton {
+  width: 2.5rem;
+  height: 3rem;
+  border: 1px solid #7b2cbf;
+  background: #7b2cbf;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.wrap {
+  width: 35%;
+}
+
+/* items del nav */
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Share Tech", sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 10px;
+  margin: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-subtitles {
+  background: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+label {
+  cursor: pointer;
+}
+
+.link:hover,
+.nav-subtitles:hover {
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Contenido desplegable del Menú */
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background-color: #7b2cbf;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-15px);
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Share Tech", sans-serif;
+  font-size: 1.05rem;
+  z-index: 1;
+}
+
+.dropdown > .link:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-links {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.25rem;
+  transition: scale 0.15 ease-in-out;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-links:hover {
+  color: #10002b;
+  transform: translateX(5px);
+}
+
+/* Tarjetas de Categorias */
 #categories-cards {
   display: flex;
   justify-content: space-evenly;
@@ -25,6 +166,7 @@ body {
     radial-gradient(at 0% 100%, hsla(273, 67%, 58%, 1) 0px, transparent 50%),
     radial-gradient(at 80% 100%, hsla(274, 100%, 74%, 1) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(278, 100%, 83%, 1) 0px, transparent 50%);
+  position: relative;
 }
 
 .categories {
@@ -32,16 +174,15 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0.7rem;
-  height: 35vh;
+  height: 50vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  font-family: "Varela Round", sans-serif;
-  font-size: 0.9rem;
+  font-family: "Share Tech", sans-serif;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.6);
   flex: 1;
   transition: 0.5s all;
-  
 }
 
 .categories h3 {
@@ -64,13 +205,13 @@ body {
 
 .categories-title {
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   padding: 1rem;
   font-family: "Share Tech", sans-serif;
   font-size: 3rem;
-  color: rgb(255, 252, 252);
+  color: rgba(255, 252, 252, 0.7);
   /* text-shadow: 4px 4px 2px #240046; */
 }
 
@@ -98,11 +239,13 @@ body {
   background-image: url(images/graphics-card.png);
 }
 
-.container-slider{
+/* Slider principal */
+
+.container-slider {
   width: 100%;
   max-width: 100%;
   margin: auto;
-  overflow: hidden;     
+  overflow: hidden;
   /* box-shadow: 0 0 0 10px #fff,
               0 15px 50px; */
   position: relative;
@@ -110,7 +253,7 @@ body {
 
 .slider {
   display: flex;
-  height: 600px;  /* antes estaba en 400px*/
+  height: 600px; /* antes estaba en 400px*/
   width: 400%;
   margin-left: -100%;
 }
@@ -152,4 +295,3 @@ body {
 .slider__btn--right {
   right: 10px;
 }
-
