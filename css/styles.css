@@ -110,7 +110,7 @@ body {
 
 .slider {
   display: flex;
-  height: 400px;
+  height: 600px;  /* antes estaba en 400px*/
   width: 400%;
   margin-left: -100%;
 }
