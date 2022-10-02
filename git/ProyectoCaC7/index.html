@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata tags   -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>eCommerce Gamer</title>
+    <!-- Icon  -->
+    <link
+      rel="shortcut icon"
+      href="https://www.logoai.com/uploads/icon/2021/09/26/b1832210-ce00-4a55-ac64-a2c1732474ab.png"
+      type="image/x-icon"
+    />
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Share+Tech&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS stylesheet Link -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!------------------- Navbar ----------------------->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <img
+          src="https://www.logoai.com/uploads/icon/2021/09/26/b1832210-ce00-4a55-ac64-a2c1732474ab.png"
+          alt="logo"
+          class="logo"
+        />
+        <!-- Buscador -->
+        <div class="wrap">
+          <div class="search">
+            <input
+              type="text"
+              class="search-term"
+              placeholder="Qué producto buscas?"
+            />
+            <button type="submit" class="searchButton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Links del nav -->
+        <div class="dropdown">
+          <button class="link">
+            <i class="fa-solid fa-list"></i>
+            <a href="#" class="nav-subtitles">Categorías</a>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-links">Periféricos</a>
+            <a href="#" class="dropdown-links">Equipos y Notebooks</a>
+            <a href="#" class="dropdown-links">Sillas Gamer</a>
+            <a href="#" class="dropdown-links">Consolas</a>
+            <a href="#" class="dropdown-links">Monitores</a>
+            <a href="#" class="dropdown-links">Tarjetas gráficas</a>
+            <a href="#" class="dropdown-links"
+              >Ver todos los productos
+              <i class="fa-solid fa-arrow-right-to-bracket"></i
+            ></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="link">
+            <i class="fa-solid fa-circle-question"></i>
+            <a href="#" class="nav-subtitles">Preguntas frecuentes</a>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-links">Cómo realizar un pedido</a>
+            <a href="#" class="dropdown-links">Formas de pago</a>
+            <a href="#" class="dropdown-links">Envíos</a>
+            <a href="#" class="dropdown-links">Garantías</a>
+            <a href="#" class="dropdown-links">Contáctanos</a>
+          </div>
+        </div>
+        <a href="#" class="link nav-subtitles">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <label for="nav-cart">Carrito</label>
+        </a>
+        <button class="link">
+          <i class="fa-solid fa-user"></i>
+          <a href="#" class="nav-subtitles">Inicia sesión</a>
+        </button>
+      </nav>
+    </header>
+    <div class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="img/pc1.jpg" alt="" class="slider__img" />
+        </div>
+        <div class="slider__section">
+          <img src="img/pc2.jpg" alt="" class="slider__img" />
+        </div>
+        <div class="slider__section">
+          <img src="img/pc3.jpg" alt="" class="slider__img" />
+        </div>
+        <div class="slider__section">
+          <img src="img/pc4.jpg" alt="" class="slider__img" />
+        </div>
+      </div>
+
+      <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+      <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+    <script src="slider.js"></script>
+
+    <section id="categories-cards">
+      <h2 class="categories-title">Categorías</h2>
+      <div class="categories peripherals">
+        <h3>Periféricos</h3>
+      </div>
+      <div class="categories notebooks">
+        <h3>Equipos y Notebooks</h3>
+      </div>
+      <div class="categories chairs">
+        <h3>Sillas Gamer</h3>
+      </div>
+      <div class="categories consoles">
+        <h3>Consolas</h3>
+      </div>
+      <div class="categories monitors">
+        <h3>Monitores</h3>
+      </div>
+      <div class="categories graphics-cards">
+        <h3>Tarjetas Gráficas</h3>
+      </div>
+    </section>
+  </body>
+</html>
