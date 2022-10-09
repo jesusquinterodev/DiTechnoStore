@@ -439,6 +439,7 @@ label {
 
 .top-product-item {
   margin: 0.5rem 0;
+  cursor: pointer;
 }
 
 .top-product-price {
@@ -465,8 +466,10 @@ label {
 }
 
 .top-products-card button:hover {
-  left: 0;
+  /* left: 0;
   right: 0;
   bottom: 0;
-  height: 3rem;
+  height: 3rem; */
+  color: #9d50bb;
+  background: rgba(236, 234, 234, 0.8);
 }
