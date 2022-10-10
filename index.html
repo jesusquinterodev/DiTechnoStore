@@ -27,6 +27,8 @@
     />
     <!-- CSS stylesheet Link -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- Javascript Main Script -->
+    <script src="main.js" type="text/javascript" defer></script>
   </head>
   <body>
     <!------------------- Navbar ----------------------->
@@ -83,14 +85,50 @@
             <a href="#" class="dropdown-links">Contáctanos</a>
           </div>
         </div>
+        <div class="dropdown">
+          <button class="link">
+            <i class="fa-solid fa-user"></i>
+            <a href="#" class="nav-subtitles">Inicia sesión</a>
+          </button>
+          <div class="dropdown-menu container-form">
+            <div class="container-form-ind login">
+              <form action="" class="login-form">
+                <h2 class="form-title">Inicia sesión</h2>
+                <p class="form-text">Ingresa a tu cuenta</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="button" value="Inicia sesión">
+                <div class="form-bottom-content">
+                  <div class="message">
+                    <p>¿Aún no tienes una cuenta?</p>
+                    <button class="sign-up-button the-sign-up-button">Regístrate acá</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container-form-ind sign-up">
+              <form action="" class="login-form">
+                <h2 class="form-title">Crea tu cuenta</h2>
+                <p class="form-text">Completa los campos</p>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="button" value="Registrarse">
+                <div class="form-bottom-content">
+                  <div class="message">
+                    <p>¿Ya tienes una cuenta?</p>
+                    <button class="sign-up-button login-button">Inicia sesión acá</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
         <a href="#" class="link nav-subtitles">
           <i class="fa-solid fa-cart-shopping"></i>
           <label for="nav-cart">Carrito</label>
         </a>
-        <button class="link">
-          <i class="fa-solid fa-user"></i>
-          <a href="#" class="nav-subtitles">Inicia sesión</a>
-        </button>
       </nav>
     </header>
     <!------------------------- Slider ------------------------>
