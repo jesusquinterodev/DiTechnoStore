@@ -36,12 +36,14 @@ nav {
   width: 4rem;
   margin-left: 1.5rem;
   margin-top: 1rem;
+  
 }
 
 .logo-img {
   position: relative;
   height: 7em;
   width: 7em;
+  overflow: hidden;
 }
 
 /* Buscador */
@@ -280,6 +282,7 @@ label {
     radial-gradient(at 80% 100%, hsla(274, 100%, 74%, 1) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(278, 100%, 83%, 1) 0px, transparent 50%);
   position: relative;
+
 }
 
 .categories {
@@ -295,6 +298,7 @@ label {
   color: rgba(255, 255, 255, 0.6);
   flex: 1;
   transition: 0.5s all;
+  cursor: pointer;
 }
 
 .categories h3 {
