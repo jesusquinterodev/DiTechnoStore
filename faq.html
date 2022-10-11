@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata tags  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>eCommerce Gamer</title>
+    <!-- Icon  -->
+    <link
+      rel="shortcut icon"
+      href="https://www.logoai.com/uploads/icon/2021/09/26/b1832210-ce00-4a55-ac64-a2c1732474ab.png"
+      type="image/x-icon"
+    />
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Share+Tech&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- CSS stylesheet Link -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Javascript Main Script -->
+    <script src="main.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <!------------------- Navbar ----------------------->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <img
+          src="https://www.logoai.com/uploads/icon/2021/09/26/b1832210-ce00-4a55-ac64-a2c1732474ab.png"
+          alt="logo"
+          class="logo"
+        />
+        <!-- Buscador -->
+        <div class="wrap">
+          <div class="search">
+            <input
+              type="text"
+              class="search-term"
+              placeholder="Qué producto buscas?"
+            />
+            <button type="submit" class="searchButton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Links del nav -->
+        <div class="dropdown">
+          <button class="link">
+            <i class="fa-solid fa-list"></i>
+            <a href="#" class="nav-subtitles">Categorías</a>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-links">Periféricos</a>
+            <a href="#" class="dropdown-links">Equipos y Notebooks</a>
+            <a href="#" class="dropdown-links">Sillas Gamer</a>
+            <a href="#" class="dropdown-links">Consolas</a>
+            <a href="#" class="dropdown-links">Monitores</a>
+            <a href="#" class="dropdown-links">Tarjetas gráficas</a>
+            <a href="#" class="dropdown-links"
+              >Ver todos los productos
+              <i class="fa-solid fa-arrow-right-to-bracket"></i
+            ></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="link">
+            <i class="fa-solid fa-circle-question"></i>
+            <a href="faq.html" class="nav-subtitles">Preguntas frecuentes</a>
+          </button>
+          <div class="dropdown-menu">
+            <a href="faq.html#faq-1" class="dropdown-links">
+              Cómo realizar un pedido
+            </a>
+            <a href="faq.html#faq-2" class="dropdown-links">Formas de pago</a>
+            <a href="faq.html#faq-3" class="dropdown-links">Envíos</a>
+            <a href="faq.html#faq-4" class="dropdown-links">Garantías</a>
+            <a href="faq.html#faq-5" class="dropdown-links">Contáctanos</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="link">
+            <i class="fa-solid fa-user"></i>
+            <a href="#" class="nav-subtitles">Inicia sesión</a>
+          </button>
+          <div class="dropdown-menu container-form">
+            <div class="container-form-ind login">
+              <form action="" class="login-form">
+                <h2 class="form-title">Inicia sesión</h2>
+                <p class="form-text">Ingresa a tu cuenta</p>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Contraseña" />
+                <input type="button" value="Inicia sesión" />
+                <div class="form-bottom-content">
+                  <div class="message">
+                    <p>¿Aún no tienes una cuenta?</p>
+                    <button class="sign-up-button the-sign-up-button">
+                      Regístrate acá
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container-form-ind sign-up">
+              <form action="" class="login-form">
+                <h2 class="form-title">Crea tu cuenta</h2>
+                <p class="form-text">Completa los campos</p>
+                <input type="text" placeholder="Nombre" />
+                <input type="text" placeholder="Apellido" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Contraseña" />
+                <input type="button" value="Registrarse" />
+                <div class="form-bottom-content">
+                  <div class="message">
+                    <p>¿Ya tienes una cuenta?</p>
+                    <button class="sign-up-button login-button">
+                      Inicia sesión acá
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="link nav-subtitles">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <label for="nav-cart">Carrito</label>
+        </a>
+      </nav>
+    </header>
+    <section class="faq-section">
+      <h2 class="title">Preguntas frecuentes</h2>
+
+      <div class="faq" id="faq-1">
+        <div class="question">
+          <h3>Cómo realizar un pedido</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illo
+            animi provident! Nisi facilis ex exercitationem. Pariatur maiores
+            temporibus veniam dolores repudiandae odio fugiat suscipit sequi
+            eveniet, neque aliquid alias. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quas delectus dignissimos quia qui mollitia,
+            deleniti inventore error earum dolorum ipsa magni iusto vitae ex
+            itaque accusantium sit sapiente magnam amet.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq" id="faq-2">
+        <div class="question">
+          <h3>Formas de pago</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illo
+            animi provident! Nisi facilis ex exercitationem. Pariatur maiores
+            temporibus veniam dolores repudiandae odio fugiat suscipit sequi
+            eveniet, neque aliquid alias.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq" id="faq-3">
+        <div class="question">
+          <h3>Envíos</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illo
+            animi provident! Nisi facilis ex exercitationem. Pariatur maiores
+            temporibus veniam dolores repudiandae odio fugiat suscipit sequi
+            eveniet, neque aliquid alias.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq" id="faq-4">
+        <div class="question">
+          <h3>Garantía de los productos</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illo
+            animi provident! Nisi facilis ex exercitationem. Pariatur maiores
+            temporibus veniam dolores repudiandae odio fugiat suscipit sequi
+            eveniet, neque aliquid alias.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq last-faq" id="faq-5">
+        <div class="question">
+          <h3>Contáctanos</h3>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illo
+            animi provident! Nisi facilis ex exercitationem. Pariatur maiores
+            temporibus veniam dolores repudiandae odio fugiat suscipit sequi
+            eveniet, neque aliquid alias.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
