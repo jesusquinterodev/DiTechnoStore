@@ -648,3 +648,7 @@ body {
 .faq.active .fa-chevron-down {
   rotate: 180deg;
 }
+
+.logo {
+  position: relative;
+}
