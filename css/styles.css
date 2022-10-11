@@ -23,11 +23,25 @@ nav {
   height: 12vh;
 }
 
-.logo {
+/* .logo {
   position: absolute;
   left: 0;
   width: 4rem;
   margin-left: 1rem;
+} */
+
+.logo {
+  position: absolute;
+  left: 0;
+  width: 4rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.logo-img {
+  position: relative;
+  height: 7em;
+  width: 7em;
 }
 
 /* Buscador */
@@ -649,6 +663,3 @@ body {
   rotate: 180deg;
 }
 
-.logo {
-  position: relative;
-}
