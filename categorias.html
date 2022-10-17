@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorias</title>
+
+  <link
+      rel="shortcut icon"
+      href="https://www.logoai.com/uploads/icon/2021/09/26/b1832210-ce00-4a55-ac64-a2c1732474ab.png"
+      type="image/x-icon"
+    />
+  <!-- Google Fonts Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&family=Share+Tech&family=Varela+Round&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome CDN link -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  />
+  <!-- CSS stylesheet Link -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Javascript Main Script -->
+  <script src="main.js" type="text/javascript" defer></script>
+  <!-- Footer/Redes Sociales -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+      <nav>
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+          <img
+            src="logo.png"
+            alt="logo"
+            class="logo-img"
+          />
+          </a>
+        </div>
+        <!-- Buscador -->
+        <div class="wrap">
+          <div class="search">
+            <input
+              type="text"
+              class="search-term"
+              placeholder="Qué producto buscas?"
+            />
+            <button type="submit" class="searchButton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Links del nav -->
+        <div class="dropdown">
+          <button class="link">
+            <i class="fa-solid fa-list"></i>
+            <a href="categorias.html"" class="nav-subtitles">Categorías</a>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-links">Periféricos</a>
+            <a href="#" class="dropdown-links">Equipos y Notebooks</a>
+            <a href="#" class="dropdown-links">Sillas Gamer</a>
+            <a href="#" class="dropdown-links">Consolas</a>
+            <a href="#" class="dropdown-links">Monitores</a>
+            <a href="#" class="dropdown-links">Tarjetas gráficas</a>
+            <a href="#" class="dropdown-links"
+              >Ver todos los productos
+              <i class="fa-solid fa-arrow-right-to-bracket"></i
+            ></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="link">
+            <i class="fa-solid fa-circle-question"></i>
+            <a href="faq.html" class="nav-subtitles">Preguntas frecuentes</a>
+          </button>
+          <div class="dropdown-menu">
+            <a href="faq.html#faq-1" class="dropdown-links">Cómo realizar un pedido</a>
+            <a href="faq.html#faq-2" class="dropdown-links">Formas de pago</a>
+            <a href="faq.html#faq-3" class="dropdown-links">Envíos</a>
+            <a href="faq.html#faq-4" class="dropdown-links">Garantías</a>
+            <a href="faq.html#faq-5" class="dropdown-links">Contáctanos</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="link">
+            <i class="fa-solid fa-user"></i>
+            <a href="#" class="nav-subtitles">Iniciar sesión</a>
+          </button>
+          <div class="dropdown-menu container-form">
+            <div class="container-form-ind login">
+              <form action="" class="login-form">
+                <h2 class="form-title">Iniciar sesión</h2>
+                <p class="form-text">Ingresa a tu cuenta</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="button" value="Iniciar sesión">
+                <div class="form-bottom-content">
+                  <div class="message">
+                    <p>¿Aún no tienes una cuenta?</p>
+                    <button class="sign-up-button the-sign-up-button">Regístrate acá</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container-form-ind sign-up">
+              <form action="" class="login-form">
+                <h2 class="form-title">Crea tu cuenta</h2>
+                <p class="form-text">Completa los campos</p>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="button" value="Registrarse">
+                <div class="form-bottom-content">
+                  <div class="message">
+                    <p>¿Ya tienes una cuenta?</p>
+                    <button class="sign-up-button login-button">Iniciar  sesión acá</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="link nav-subtitles">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <label for="nav-cart">Carrito</label>
+        </a>
+      </nav>
+    </header>
+
+    <!--Inicio seccion categorias--->
+    <div class="wrap">
+      <h1>Escoge un producto</h1>
+      <div class="store-wrapper">
+        <div class="category_list">
+          <a href="#" class="category_item" category="all">Todo</a>
+          <a href="#" class="category_item" category="equipos">Equipos y nooteboks</a>
+          <a href="#" class="category_item" category="sillas">Sillas Gamer</a>
+          <a href="#" class="category_item" category="consolas">Consolas</a>
+          <a href="#" class="category_item" category="monitores">Monitores</a>
+          <a href="#" class="category_item" category="tarjetasGraficas">Tarjetas Graficas</a>
+        </div>
+        <section class="products-list">
+
+          <div class="product-item" category="consolas">
+            <h3 class="top-product-item">Playstation 5</h3>
+            <img
+              class="top-product-img"
+              src="https://gmedia.playstation.com/is/image/SIEPDC/playstation-5-horizontal-product-shot-01-ps5-en-29sep21?$native--t$"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$150.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+
+          <div class="product-item" category="consolas">
+            <h3 class="top-product-item">Xbox Series X</h3>
+            <img
+              class="top-product-img"
+              src="https://compass-ssl.xbox.com/assets/f7/9c/f79cf7d6-8fe6-407d-817e-441767306365.png?n=XBX_A-BuyBoxBGImage02-D.png"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$140.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+
+          <div class="product-item" category="equipos">
+            <h3 class="top-product-item">PC Gamer Ryzen 5</h3>
+            <img
+              class="top-product-img"
+              src="http://d3ugyf2ht6aenh.cloudfront.net/stores/854/212/products/pc_amd-5341-14f3680d547a36881f16373415839435-640-0.png"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$240.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+
+          <div class="product-item" category="equipos">
+            <h3 class="top-product-item">PC Gamer Intel</h3>
+            <img
+              class="top-product-img"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpdv7EWmykpMMjGVGU4au_b1NDA5KQfVH4LauMuV0gmg6QlQIuIwQp-UUABPTJ7BLLuIM&usqp=CAU"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$280.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+
+          <div class="product-item" category="equipos">
+            <h3 class="top-product-item">Nootebok Intel</h3>
+            <img
+              class="top-product-img"
+              src="https://e7.pngegg.com/pngimages/971/817/png-clipart-rog-strix-scar-edition-gaming-laptop-gl503-republic-of-gamers-asus-rog-strix-scar-ii-gl504-laptop-electronics-computer.png"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$200.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+
+          <div class="product-item" category="sillas">
+            <h3 class="top-product-item">Silla Raidmax</h3>
+            <img
+              class="top-product-img"
+              src="https://www.xt-pc.com.ar/img/productos/Pics_Prod/ACC767.jpg"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$40.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+
+          <div class="product-item" category="monitores">
+            <h3 class="top-product-item">Monitor Gamer Curvo</h3>
+            <img
+              class="top-product-img"
+              src="https://front.dev.malditohard.com.ar/img/migration/MONITOR-GAMER-GIGABYTE-CURVO-LED-27-AORUS-CV27QSA.webp"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$60.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+
+          <div class="product-item" category="monitores">
+            <h3 class="top-product-item">Monitor Gamer 145hz</h3>
+            <img
+              class="top-product-img"
+              src="https://langtecnologia.com.ar/2291-large_default/monitor-gamer-32-vga-hdmi-qhd-144hz-5ms-westinghouse.jpg"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$80.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+
+          <div class="product-item" category="tarjetasGraficas">
+            <h3 class="top-product-item">GTX 1660 SUPER</h3>
+            <img
+              class="top-product-img"
+              src="https://http2.mlstatic.com/D_NQ_NP_2X_718969-MLA50134912442_052022-V.webp"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$80.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+
+          <div class="product-item" category="tarjetasGraficas">
+            <h3 class="top-product-item">RADEON RX580</h3>
+            <img
+              class="top-product-img"
+              src="https://http2.mlstatic.com/D_NQ_NP_811957-MLA43805450065_102020-W.jpg"
+              alt=""
+            />
+            <p class="top-product-item top-product-price">$70.000</p>
+            <button class="top-product-item">Comprar<i class="fa-solid fa-cart-plus"></i></i></button>
+          </div>
+          
+
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <h3>DiTechno</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi ea sed natus placeat in libero?</p>
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2022 DiTechno</p>
+      </div>
+    </footer>
+</body>
+</html>
