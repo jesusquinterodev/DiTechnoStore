@@ -166,7 +166,7 @@ label {
 
 /* Formulario de inicio de sesión y registro */
 .container-form {
-  width: 20vw;
+  width: 18vw;
   text-align: center;
 }
 
@@ -372,7 +372,7 @@ label {
 .slider {
   display: flex;
   height: 600px; /* antes estaba en 400px*/
-  width: 400%;
+  width: 400% !important; 
   margin-left: -100%;
   position: relative;
 }
@@ -697,7 +697,6 @@ footer {
   line-height: 3rem;
 }
 .footer-content p{
-  max-width: 100%;
   margin: 10px auto;
   line-height: 28px;
   font-size: 14px;
