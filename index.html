@@ -95,16 +95,18 @@
         <div class="dropdown">
           <button class="link">
             <i class="fa-solid fa-user"></i>
-            <a href="#" class="nav-subtitles">Iniciar sesión</a>
+            <a href="#" class="nav-subtitles" id="login-title">Iniciar sesión</a>
           </button>
-          <div class="dropdown-menu container-form">
+           <!----------------------- Desde acá empieza el formulario ------------------------>
+          <div class="dropdown-menu container-form" id="container-sign-out">
             <div class="container-form-ind login">
-              <form action="" class="login-form">
+              <form action="" class="login-form" method="post" id="login-form">
                 <h2 class="form-title">Iniciar sesión</h2>
                 <p class="form-text">Ingresa a tu cuenta</p>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Contraseña">
-                <input type="button" value="Iniciar sesión">
+                <input type="email" placeholder="Email" name="email" id="email-login" autocomplete="off">
+                <input type="password" placeholder="Contraseña" name="contrasena" id="pass-login" autocomplete="off">
+                <input type="submit" value="Iniciar sesión" id="login-button">
+                <p class="warnings" id="warning-login"></p>
                 <div class="form-bottom-content">
                   <div class="message">
                     <p>¿Aún no tienes una cuenta?</p>
@@ -114,23 +116,25 @@
               </form>
             </div>
             <div class="container-form-ind sign-up">
-              <form action="" class="login-form">
+              <form action="" class="login-form" method="post" id="sign-up-form">
                 <h2 class="form-title">Crea tu cuenta</h2>
                 <p class="form-text">Completa los campos</p>
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Contraseña">
-                <input type="button" value="Registrarse">
+                <input type="text" placeholder="Nombre" name="nombre" id="name-signup" autocomplete="off">
+                <input type="text" placeholder="Apellido" name="apellido" id="lname-signup" autocomplete="off">
+                <input type="email" placeholder="Email" name="email" id="email-signup" autocomplete="off">
+                <input type="password" placeholder="Contraseña" name="contrasena" id="pass-signup" autocomplete="off">
+                <input type="submit" value="Registrarse" id="sign-up-button">
+                <p class="warnings" id="warning-signup"></p>
                 <div class="form-bottom-content">
                   <div class="message">
                     <p>¿Ya tienes una cuenta?</p>
-                    <button class="sign-up-button login-button">Inicia sesión acá</button>
+                    <button class="sign-up-button login-button">Iniciar  sesión acá</button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
+          <!-------------------------- Acá termina el formulario --------------------------->
         </div>
         <a href="#" class="link nav-subtitles">
           <i class="fa-solid fa-cart-shopping"></i>
