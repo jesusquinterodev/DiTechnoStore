@@ -84,7 +84,7 @@ nav {
   font-size: 1.25rem;
 }
 
-.wrap {
+.search-wrap {
   width: 35%;
 }
 
@@ -166,7 +166,7 @@ label {
 
 /* Formulario de inicio de sesión y registro */
 .container-form {
-  width: 16vw;
+  width: 20vw;
   text-align: center;
 }
 
