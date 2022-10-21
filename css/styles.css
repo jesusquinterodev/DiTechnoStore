@@ -1010,3 +1010,7 @@ footer {
     margin-left: 0px;
   }
 }
+
+.footer-bottom {
+  width: 100%;
+}
