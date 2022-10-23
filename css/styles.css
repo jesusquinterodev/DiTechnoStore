@@ -1100,3 +1100,81 @@ footer {
 .footer-bottom {
   width: 100%;
 }
+
+/* cart */
+
+.cart-page {
+  margin: 80px auto;
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #9d50bb;
+}
+td{
+  padding: 10px 5px;
+}
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  color: #9d50bb;
+  font-size: 12PX;
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #9d50bb;
+  margin-right: 10%;
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 2%;
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+
+.compra_button{
+  margin-left: 68%;
+  padding: 10px;
+  font-weight: bolder;
+  background: #c46bf7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: color 0.15s,
+              background-color 0.15s;
+}
+
+.compra_button:hover{
+  color: #c46bf7;
+  background-color: #fff;
+}
