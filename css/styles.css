@@ -298,80 +298,77 @@ label {
   display: none;
 }
 
-#responsive-menu {
+/* #responsive-menu {
   display: none;
-}
+} */
 /*************** RESPONSIVE Navbar ******************/
 
 @media screen and (max-width: 992px) {
-  .link,
-  .search-term,
-  .searchButton,
-  .search,
-  .search-wrap {
-    display: none;
-  }
-
   .toggle-button {
     display: inline-block;
-    font-size: 2.5rem;
+    font-size: 3rem;
     cursor: pointer;
     color: #eeeeee;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
   }
 
   .toggle-button:hover {
     color: #7b2cbf;
   }
 
-  .responsive-menu {
-    display: flex;
+  nav {
+    min-height: 100vh;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    min-height: 88vh;
-    width: 100%;
-    background-color: #eeeeee75;
-    position: relative;
-  }
-
-  .res-menu-link {
-    padding: 2rem;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    gap: 3rem;
   }
 
-  .res-menu-content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
+  .nav-subtitles {
+    font-size: 1.5rem;
   }
 
-  .res-menu-link .res-menu-icon {
-    margin-left: 2rem;
+  .dropdown .link i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
-  .res-menu-link .res-menu-icon:hover {
-    color: #eeeeee;
+  .dropdown .link {
+    margin-left: 1rem;
+    align-items: flex-start;
+    width: 20%;
   }
 
-  .res-menu-dropdown {
-    font-size: 1.2rem;
-    margin: 0.5rem 0 0.5rem 2rem;
-    color: #eeeeee;
+  a.link {
+    margin-left: 1rem;
+    align-items: flex-start;
+    text-align: left;
   }
 
-  .res-menu-dropdown:hover {
-    color: #4a00e0;
+  a.link i {
+    margin-bottom: 0.5rem;
   }
 
-  .res-menu-link a {
-    text-decoration: none;
+  .search-wrap {
+    width: 80%;
+    align-self: center;
+    margin-left: 4rem;
+    margin-top: 3rem;
   }
 
-  .res-menu-link i {
-    margin-right: 1rem;
+  .container-form {
+    width: 50vw;
+  }
+
+  .dropdown-menu {
+    width: 50vw;
+  }
+
+  .dropdown > .link:hover + .dropdown-menu,
+  .dropdown-menu:hover {
+    transform: translate(70%, -75%);
   }
 }
 
