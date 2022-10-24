@@ -10,15 +10,15 @@ body {
   background-color: #7812b3;
 }
 
-/* Navbar */
+/*************** Navbar ******************/
 nav {
   background-color: #10002b;
   display: flex;
   align-items: baseline;
   justify-content: flex-end;
   align-items: center;
-  padding: 0.5rem 5rem;
-  gap: 5rem;
+  padding: 0.5rem 4rem 0.5rem 0rem;
+  gap: 2rem;
   position: relative;
   height: 12vh;
 }
@@ -33,9 +33,10 @@ nav {
 .logo {
   position: absolute;
   left: 0;
+  top: -0.4rem;
   width: 7rem;
   height: 12vh;
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
   /* margin-top: 1rem; */
   overflow: hidden;
 }
@@ -291,6 +292,87 @@ label {
   text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.toggle-button {
+  display: none;
+}
+
+#responsive-menu {
+  display: none;
+}
+/*************** RESPONSIVE Navbar ******************/
+
+@media screen and (max-width: 992px) {
+  .link,
+  .search-term,
+  .searchButton,
+  .search,
+  .search-wrap {
+    display: none;
+  }
+
+  .toggle-button {
+    display: inline-block;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #eeeeee;
+  }
+
+  .toggle-button:hover {
+    color: #7b2cbf;
+  }
+
+  .responsive-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 88vh;
+    width: 100%;
+    background-color: #eeeeee75;
+    position: relative;
+  }
+
+  .res-menu-link {
+    padding: 2rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .res-menu-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .res-menu-link .res-menu-icon {
+    margin-left: 2rem;
+  }
+
+  .res-menu-link .res-menu-icon:hover {
+    color: #eeeeee;
+  }
+
+  .res-menu-dropdown {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0.5rem 2rem;
+    color: #eeeeee;
+  }
+
+  .res-menu-dropdown:hover {
+    color: #4a00e0;
+  }
+
+  .res-menu-link a {
+    text-decoration: none;
+  }
+
+  .res-menu-link i {
+    margin-right: 1rem;
+  }
 }
 
 /* Tarjetas de Categorias */
@@ -787,7 +869,7 @@ body {
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-column-gap: 5rem;   /*cambio aca para que se vea bien en todos los monitores */
+  grid-column-gap: 5rem; /*cambio aca para que se vea bien en todos los monitores */
   padding: 3rem;
   background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
   justify-content: center;
@@ -1117,31 +1199,31 @@ table {
   display: flex;
   flex-wrap: wrap;
 }
-th{
+th {
   text-align: left;
   padding: 5px;
   color: #fff;
   background: #9d50bb;
 }
-td{
+td {
   padding: 10px 5px;
 }
-td input{
+td input {
   width: 40px;
   height: 30px;
   padding: 5px;
 }
-td a{
+td a {
   color: #9d50bb;
-  font-size: 12PX;
+  font-size: 12px;
 }
-td img{
+td img {
   width: 80px;
   height: 80px;
   margin-right: 10px;
 }
 
-.total-price{
+.total-price {
   display: flex;
   justify-content: flex-end;
 }
@@ -1153,14 +1235,14 @@ td img{
   max-width: 350px;
   margin-bottom: 2%;
 }
-td:last-child{
+td:last-child {
   text-align: right;
 }
-th:last-child{
+th:last-child {
   text-align: right;
 }
 
-.compra_button{
+.compra_button {
   margin-left: 68%;
   padding: 10px;
   font-weight: bolder;
@@ -1170,11 +1252,10 @@ th:last-child{
   cursor: pointer;
   margin-top: 10px;
   text-decoration: none;
-  transition: color 0.15s,
-              background-color 0.15s;
+  transition: color 0.15s, background-color 0.15s;
 }
 
-.compra_button:hover{
+.compra_button:hover {
   color: #c46bf7;
   background-color: #fff;
 }
