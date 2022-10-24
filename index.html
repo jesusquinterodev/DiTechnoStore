@@ -41,7 +41,7 @@
   <body>
     <!------------------- Navbar ----------------------->
     <header>
-      <nav>
+      <nav class="">
         <!-- Logo -->
         <div class="logo">
           <a href="index.html">
@@ -62,7 +62,7 @@
           </div>
         </div>
         <!-- Links del nav -->
-        <div class="dropdown">
+        <div class="dropdown invisible">
           <button class="link">
             <i class="fa-solid fa-list"></i>
             <a href="categorias.html" class="nav-subtitles">Categorías</a>
@@ -80,7 +80,7 @@
             ></a>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown invisible">
           <button class="link">
             <i class="fa-solid fa-circle-question"></i>
             <a href="faq.html" class="nav-subtitles">Preguntas frecuentes</a>
@@ -95,7 +95,7 @@
             <a href="faq.html#faq-5" class="dropdown-links">Contáctanos</a>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown invisible">
           <button class="link">
             <i class="fa-solid fa-user"></i>
             <a href="#" class="nav-subtitles" id="login-title"
@@ -186,12 +186,14 @@
           </div>
           <!-------------------------- Acá termina el formulario --------------------------->
         </div>
-        <a href="cart.html" class="link nav-subtitles">
+        <a href="cart.html" class="link nav-subtitles invisible">
           <i class="fa-solid fa-cart-shopping"></i>
           <label for="nav-cart">Carrito</label>
         </a>
         <!-------------- Cosas para la parte responsive del NAV  ------------------>
-        <i class="fa-solid fa-bars toggle-button"></i>
+        <button onclick="navMinimize()">
+          <i class="fa-solid fa-bars toggle-button"></i>
+        </button>
       </nav>
     </header>
     <!------------------------- Slider ------------------------>

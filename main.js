@@ -121,3 +121,23 @@ function loginValidation(e) {
     warningLogin.innerHTML = "Contrasena incorrecta";
   }
 }
+
+const nav = document.querySelector("nav");
+const allNavItems = Array.from(document.querySelectorAll(".invisible"));
+
+console.log(allNavItems);
+
+function navMinimize() {
+  nav.classList.toggle("nav-minMax");
+  navDisappear();
+}
+
+function navDisappear() {
+  allNavItems.forEach((navItem) => {
+    if (navItem.classList.contains("invisible")) {
+      navItem.classList.replace("invisible", "visible");
+    } else {
+      navItem.classList.replace("visible", "invisible");
+    }
+  });
+}
