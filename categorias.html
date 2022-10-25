@@ -36,108 +36,161 @@
 </head>
 <body>
   <header>
-      <nav>
-        <!-- Logo -->
-        <div class="logo">
-          <a href="index.html">
-          <img
-            src="logo.png"
-            alt="logo"
-            class="logo-img"
-          />
-          </a>
-        </div>
-        <!-- Buscador -->
-        <div class="wrap">
-          <div class="search">
-            <input
-              type="text"
-              class="search-term"
-              placeholder="Qué producto buscas?"
-            />
-            <button type="submit" class="searchButton">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
-        </div>
-        <!-- Links del nav -->
-        <div class="dropdown">
-          <button class="link">
-            <i class="fa-solid fa-list"></i>
-            <a href="categorias.html"" class="nav-subtitles">Categorías</a>
-          </button>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-links">Periféricos</a>
-            <a href="#" class="dropdown-links">Equipos y Notebooks</a>
-            <a href="#" class="dropdown-links">Sillas Gamer</a>
-            <a href="#" class="dropdown-links">Consolas</a>
-            <a href="#" class="dropdown-links">Monitores</a>
-            <a href="#" class="dropdown-links">Tarjetas gráficas</a>
-            <a href="#" class="dropdown-links"
-              >Ver todos los productos
-              <i class="fa-solid fa-arrow-right-to-bracket"></i
-            ></a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="link">
-            <i class="fa-solid fa-circle-question"></i>
-            <a href="faq.html" class="nav-subtitles">Preguntas frecuentes</a>
-          </button>
-          <div class="dropdown-menu">
-            <a href="faq.html#faq-1" class="dropdown-links">Cómo realizar un pedido</a>
-            <a href="faq.html#faq-2" class="dropdown-links">Formas de pago</a>
-            <a href="faq.html#faq-3" class="dropdown-links">Envíos</a>
-            <a href="faq.html#faq-4" class="dropdown-links">Garantías</a>
-            <a href="faq.html#faq-5" class="dropdown-links">Contáctanos</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="link">
-            <i class="fa-solid fa-user"></i>
-            <a href="#" class="nav-subtitles">Iniciar sesión</a>
-          </button>
-          <div class="dropdown-menu container-form">
-            <div class="container-form-ind login">
-              <form action="" class="login-form">
-                <h2 class="form-title">Iniciar sesión</h2>
-                <p class="form-text">Ingresa a tu cuenta</p>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Contraseña">
-                <input type="button" value="Iniciar sesión">
-                <div class="form-bottom-content">
-                  <div class="message">
-                    <p>¿Aún no tienes una cuenta?</p>
-                    <button class="sign-up-button the-sign-up-button">Regístrate acá</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="container-form-ind sign-up">
-              <form action="" class="login-form">
-                <h2 class="form-title">Crea tu cuenta</h2>
-                <p class="form-text">Completa los campos</p>
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Contraseña">
-                <input type="button" value="Registrarse">
-                <div class="form-bottom-content">
-                  <div class="message">
-                    <p>¿Ya tienes una cuenta?</p>
-                    <button class="sign-up-button login-button">Iniciar  sesión acá</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <a href="cart.html" class="link nav-subtitles">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <label for="nav-cart">Carrito</label>
+    <nav class="">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="logo" class="logo-img" />
         </a>
-      </nav>
-    </header>
+      </div>
+      <!-- Buscador -->
+      <div class="search-wrap">
+        <div class="search">
+          <input
+            type="text"
+            class="search-term"
+            placeholder="Qué producto buscas?"
+          />
+          <button type="submit" class="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Links del nav -->
+      <div class="dropdown invisible">
+        <button class="link">
+          <i class="fa-solid fa-list"></i>
+          <a href="categorias.html" class="nav-subtitles">Categorías</a>
+        </button>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-links">Periféricos</a>
+          <a href="#" class="dropdown-links">Equipos y Notebooks</a>
+          <a href="#" class="dropdown-links">Sillas Gamer</a>
+          <a href="#" class="dropdown-links">Consolas</a>
+          <a href="#" class="dropdown-links">Monitores</a>
+          <a href="#" class="dropdown-links">Tarjetas gráficas</a>
+          <a href="#" class="dropdown-links"
+            >Ver todos los productos
+            <i class="fa-solid fa-arrow-right-to-bracket"></i
+          ></a>
+        </div>
+      </div>
+      <div class="dropdown invisible">
+        <button class="link">
+          <i class="fa-solid fa-circle-question"></i>
+          <a href="faq.html" class="nav-subtitles">Preguntas frecuentes</a>
+        </button>
+        <div class="dropdown-menu">
+          <a href="faq.html#faq-1" class="dropdown-links"
+            >Cómo realizar un pedido</a
+          >
+          <a href="faq.html#faq-2" class="dropdown-links">Formas de pago</a>
+          <a href="faq.html#faq-3" class="dropdown-links">Envíos</a>
+          <a href="faq.html#faq-4" class="dropdown-links">Garantías</a>
+          <a href="faq.html#faq-5" class="dropdown-links">Contáctanos</a>
+        </div>
+      </div>
+      <div class="dropdown invisible">
+        <button class="link">
+          <i class="fa-solid fa-user"></i>
+          <a href="#" class="nav-subtitles" id="login-title"
+            >Iniciar sesión</a
+          >
+        </button>
+        <!----------------------- Desde acá empieza el formulario ------------------------>
+        <div class="dropdown-menu container-form" id="container-sign-out">
+          <div class="container-form-ind login">
+            <form action="" class="login-form" method="post" id="login-form">
+              <h2 class="form-title">Iniciar sesión</h2>
+              <p class="form-text">Ingresa a tu cuenta</p>
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                id="email-login"
+                autocomplete="off"
+              />
+              <input
+                type="password"
+                placeholder="Contraseña"
+                name="contrasena"
+                id="pass-login"
+                autocomplete="off"
+              />
+              <input type="submit" value="Iniciar sesión" id="login-button" />
+              <p class="warnings" id="warning-login"></p>
+              <div class="form-bottom-content">
+                <div class="message">
+                  <p>¿Aún no tienes una cuenta?</p>
+                  <button class="sign-up-button the-sign-up-button">
+                    Regístrate acá
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="container-form-ind sign-up">
+            <form
+              action=""
+              class="login-form"
+              method="post"
+              id="sign-up-form"
+            >
+              <h2 class="form-title">Crea tu cuenta</h2>
+              <p class="form-text">Completa los campos</p>
+              <input
+                type="text"
+                placeholder="Nombre"
+                name="nombre"
+                id="name-signup"
+                autocomplete="off"
+              />
+              <input
+                type="text"
+                placeholder="Apellido"
+                name="apellido"
+                id="lname-signup"
+                autocomplete="off"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                id="email-signup"
+                autocomplete="off"
+              />
+              <input
+                type="password"
+                placeholder="Contraseña"
+                name="contrasena"
+                id="pass-signup"
+                autocomplete="off"
+              />
+              <input type="submit" value="Registrarse" id="sign-up-button" />
+              <p class="warnings" id="warning-signup"></p>
+              <div class="form-bottom-content">
+                <div class="message">
+                  <p>¿Ya tienes una cuenta?</p>
+                  <button class="sign-up-button login-button">
+                    Iniciar sesión acá
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-------------------------- Acá termina el formulario --------------------------->
+      </div>
+      <a href="cart.html" class="link nav-subtitles invisible">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <label for="nav-cart">Carrito</label>
+      </a>
+      <!-------------- Cosas para la parte responsive del NAV  ------------------>
+      <button class="button-toggle" onclick="navMinimize()">
+        <i class="fa-solid fa-bars toggle-button"></i>
+      </button>
+    </nav>
+  </header>
 
     <!--Inicio seccion categorias--->
 
