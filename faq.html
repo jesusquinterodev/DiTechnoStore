@@ -34,6 +34,11 @@
   <!-- Javascript Main Script -->
   <script src="main.js" type="text/javascript" defer></script>
   <script src="faq.js" type="text/javascript" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
 </head>
   <body>
     <!------------------- Navbar ----------------------->
@@ -262,6 +267,33 @@
         </div>
       </div>
     </section>
+
+    <form action="" class="contact-form" id="form">
+      <div class="form">
+        <div class="titulo">
+          <h2>CONTACTANOS</h2>
+        </div>
+        <div class="half">
+          <div class="grupo item">
+            <label for="name">NAME</label>
+            <input type="text" id = "name">
+          </div>
+          <div class="grupo item">
+            <label for="email">EMAIL</label>
+            <input type="text" id = "email">
+          </div>
+        </div>
+        <div class="grupo full">
+          <label for="message">MESSAGE</label>
+          <textarea name="" id = "message"></textarea>
+        </div>
+        <div class="action">
+          <button type="submit">Enviar</button>
+          <p class="warnings" id="warnings"></p>
+        </div>
+      </div>
+    </form>
+    <script src="js/contact.js"></script>
 
     <footer>
       <div class="footer-content">
