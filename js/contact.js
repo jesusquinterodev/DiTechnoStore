@@ -2,7 +2,7 @@ const nombre = document.getElementById("name");
 const email = document.getElementById("email");
 const form = document.getElementById("form");
 const texto = document.getElementById("message");
-const parrafo = document.getElementById("warnings");
+const parrafo = document.getElementById("warnings-b");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
