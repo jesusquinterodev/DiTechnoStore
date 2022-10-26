@@ -33,6 +33,8 @@
   <script src="js/jquery-3.2.1.js"></script>
 
   <script src="js/script.js"> </script>
+
+  <script src="categorias.js"></script>
 </head>
 <body>
   <header>
@@ -63,13 +65,12 @@
           <a href="categorias.html" class="nav-subtitles">Categorías</a>
         </button>
         <div class="dropdown-menu">
-          <a href="#" class="dropdown-links">Periféricos</a>
-          <a href="#" class="dropdown-links">Equipos y Notebooks</a>
-          <a href="#" class="dropdown-links">Sillas Gamer</a>
-          <a href="#" class="dropdown-links">Consolas</a>
-          <a href="#" class="dropdown-links">Monitores</a>
-          <a href="#" class="dropdown-links">Tarjetas gráficas</a>
-          <a href="#" class="dropdown-links"
+          <a href="categorias.html#equipos" class="dropdown-links">Equipos y Notebooks</a>
+          <a href="categorias.html#sillas" class="dropdown-links">Sillas Gamer</a>
+          <a href="categorias.html#consolas" class="dropdown-links">Consolas</a>
+          <a href="categorias.html#monitores" class="dropdown-links">Monitores</a>
+          <a href="categorias.html#tarjetas" class="dropdown-links">Tarjetas gráficas</a>
+          <a href="categorias.html#all" class="dropdown-links"
             >Ver todos los productos
             <i class="fa-solid fa-arrow-right-to-bracket"></i
           ></a>
@@ -200,11 +201,11 @@
 
         <div class="category_list">
           <a href="#" class="category_item" category="all" id="all">Todo</a>
-          <a href="#" class="category_item" category="equipos">Equipos y nooteboks</a>
-          <a href="#" class="category_item" category="sillas">Sillas Gamer</a>
-          <a href="#" class="category_item" category="consolas">Consolas</a>
-          <a href="#" class="category_item" category="monitores">Monitores</a>
-          <a href="#" class="category_item" category="tarjetasGraficas">Tarjetas Graficas</a>
+          <a href="#" class="category_item" category="equipos" id="equipos">Equipos y nooteboks</a>
+          <a href="#" class="category_item" category="sillas" id="sillas">Sillas Gamer</a>
+          <a href="#" class="category_item" category="consolas" id="consolas">Consolas</a>
+          <a href="#" class="category_item" category="monitores" id="monitores">Monitores</a>
+          <a href="#" class="category_item" category="tarjetasGraficas" id="tarjetas">Tarjetas Graficas</a>
         </div>
 
         <section class="products-list">
