@@ -1,57 +1,52 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <!-- Metadata tags  -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title -->
-    <title>eCommerce Gamer</title>
-    <!-- Icon  -->
-    <link
-      rel="shortcut icon"
-      href="https://www.logoai.com/uploads/icon/2021/09/26/b1832210-ce00-4a55-ac64-a2c1732474ab.png"
-      type="image/x-icon"
-    />
-    <!-- Google Fonts Links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Share+Tech&family=Varela+Round&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome CDN link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <!-- CSS stylesheet Link -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- Javascript Scripts -->
-    <script src="main.js" type="text/javascript" defer></script>
-    <script src="faq.js" type="text/javascript" defer></script>
-    <script src="js/slider.js" type="text/javascript" defer></script>
-    <script src="testimonial.js" type="text/javascript" defer></script>
-    <!-- Footer/Redes Sociales -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <!-- Metadata tags  -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title -->
+  <title>eCommerce Gamer</title>
+  
+  <!-- Icon  -->
+  <link
+    rel="shortcut icon"
+    href="https://www.logoai.com/uploads/icon/2021/09/26/b1832210-ce00-4a55-ac64-a2c1732474ab.png"
+    type="image/x-icon"
+  />
+  <!-- Google Fonts Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Audiowide&family=Share+Tech&family=Varela+Round&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome CDN link -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  />
+  <!-- CSS stylesheet Link -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Footer/Redes Sociales -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <!-- Javascript Main Script -->
+  <script src="main.js" type="text/javascript" defer></script>
+  <script src="faq.js" type="text/javascript" defer></script>
+</head>
   <body>
     <!------------------- Navbar ----------------------->
     <header>
-      <nav>
+      <nav class="">
         <!-- Logo -->
-        <a href="index.html" class="logo">
-          <img
-            src="logo.png"
-            alt="logo"
-            class="logo-img"
-          />
-        </a>
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.png" alt="logo" class="logo-img" />
+          </a>
+        </div>
         <!-- Buscador -->
-        <div class="wrap">
+        <div class="search-wrap">
           <div class="search">
             <input
               type="text"
@@ -64,7 +59,7 @@
           </div>
         </div>
         <!-- Links del nav -->
-        <div class="dropdown">
+        <div class="dropdown invisible">
           <button class="link">
             <i class="fa-solid fa-list"></i>
             <a href="categorias.html" class="nav-subtitles">Categorías</a>
@@ -82,34 +77,50 @@
             ></a>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown invisible">
           <button class="link">
             <i class="fa-solid fa-circle-question"></i>
             <a href="faq.html" class="nav-subtitles">Preguntas frecuentes</a>
           </button>
           <div class="dropdown-menu">
-            <a href="faq.html#faq-1" class="dropdown-links">
-              Cómo realizar un pedido
-            </a>
+            <a href="faq.html#faq-1" class="dropdown-links"
+              >Cómo realizar un pedido</a
+            >
             <a href="faq.html#faq-2" class="dropdown-links">Formas de pago</a>
             <a href="faq.html#faq-3" class="dropdown-links">Envíos</a>
             <a href="faq.html#faq-4" class="dropdown-links">Garantías</a>
             <a href="faq.html#faq-5" class="dropdown-links">Contáctanos</a>
           </div>
         </div>
-        <div class="dropdown">
+        <div class="dropdown invisible">
           <button class="link">
             <i class="fa-solid fa-user"></i>
-            <a href="#" class="nav-subtitles">Iniciar sesión</a>
+            <a href="#" class="nav-subtitles" id="login-title"
+              >Iniciar sesión</a
+            >
           </button>
-          <div class="dropdown-menu container-form">
+          <!----------------------- Desde acá empieza el formulario ------------------------>
+          <div class="dropdown-menu container-form" id="container-sign-out">
             <div class="container-form-ind login">
-              <form action="" class="login-form">
+              <form action="" class="login-form" method="post" id="login-form">
                 <h2 class="form-title">Iniciar sesión</h2>
                 <p class="form-text">Ingresa a tu cuenta</p>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Contraseña" />
-                <input type="button" value="Iniciar sesión" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  id="email-login"
+                  autocomplete="off"
+                />
+                <input
+                  type="password"
+                  placeholder="Contraseña"
+                  name="contrasena"
+                  id="pass-login"
+                  autocomplete="off"
+                />
+                <input type="submit" value="Iniciar sesión" id="login-button" />
+                <p class="warnings" id="warning-login"></p>
                 <div class="form-bottom-content">
                   <div class="message">
                     <p>¿Aún no tienes una cuenta?</p>
@@ -121,14 +132,44 @@
               </form>
             </div>
             <div class="container-form-ind sign-up">
-              <form action="" class="login-form">
+              <form
+                action=""
+                class="login-form"
+                method="post"
+                id="sign-up-form"
+              >
                 <h2 class="form-title">Crea tu cuenta</h2>
                 <p class="form-text">Completa los campos</p>
-                <input type="text" placeholder="Nombre" />
-                <input type="text" placeholder="Apellido" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Contraseña" />
-                <input type="button" value="Registrarse" />
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  name="nombre"
+                  id="name-signup"
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  placeholder="Apellido"
+                  name="apellido"
+                  id="lname-signup"
+                  autocomplete="off"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  id="email-signup"
+                  autocomplete="off"
+                />
+                <input
+                  type="password"
+                  placeholder="Contraseña"
+                  name="contrasena"
+                  id="pass-signup"
+                  autocomplete="off"
+                />
+                <input type="submit" value="Registrarse" id="sign-up-button" />
+                <p class="warnings" id="warning-signup"></p>
                 <div class="form-bottom-content">
                   <div class="message">
                     <p>¿Ya tienes una cuenta?</p>
@@ -140,11 +181,16 @@
               </form>
             </div>
           </div>
+          <!-------------------------- Acá termina el formulario --------------------------->
         </div>
-        <a href="cart.html" class="link nav-subtitles">
+        <a href="cart.html" class="link nav-subtitles invisible">
           <i class="fa-solid fa-cart-shopping"></i>
           <label for="nav-cart">Carrito</label>
         </a>
+        <!-------------- Cosas para la parte responsive del NAV  ------------------>
+        <button class="button-toggle" onclick="navMinimize()">
+          <i class="fa-solid fa-bars toggle-button"></i>
+        </button>
       </nav>
     </header>
     <section class="faq-section">
