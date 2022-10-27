@@ -11,13 +11,14 @@ async function getJoke() {
   });
   const jokeObj = await jokeData.json();
   let joke = jokeObj.joke;
-  Swal.fire({
-    title: joke + "🤣",
-    showClass: {
-      popup: 'animate__animated animate__fadeInDown'
-    },
-    hideClass: {
-      popup: 'animate__animated animate__fadeOutUp'
-    }
-  })
+  alert(joke + " 🤣")
+//   Swal.fire({
+//     title: joke + "🤣",
+//     showClass: {
+//       popup: 'animate__animated animate__fadeInDown'
+//     },
+//     hideClass: {
+//       popup: 'animate__animated animate__fadeOutUp'
+//     }
+//   })
 }
