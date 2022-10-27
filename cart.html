@@ -10,7 +10,7 @@
     <!-- Icon  -->
     <link
       rel="shortcut icon"
-      href="https://www.logoai.com/uploads/icon/2021/09/26/b1832210-ce00-4a55-ac64-a2c1732474ab.png"
+      href="img/ditechno-icon.jpg"
       type="image/x-icon"
     />
     <!-- Google Fonts Links -->
@@ -33,263 +33,295 @@
     <script src="js/slider.js" type="text/javascript" defer></script>
     <script src="testimonial.js" type="text/javascript" defer></script>
     <!-- Footer/Redes Sociales -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-<body>
-  <header>
-    <nav class="">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html">
-          <img src="logo.png" alt="logo" class="logo-img" />
-        </a>
-      </div>
-      <!-- Buscador -->
-      <div class="search-wrap">
-        <div class="search">
-          <input
-            type="text"
-            class="search-term"
-            placeholder="Qué producto buscas?"
-          />
-          <button type="submit" class="searchButton">
-            <i class="fa-solid fa-magnifying-glass"></i>
+  <body>
+    <header>
+      <nav class="">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.png" alt="logo" class="logo-img" />
+          </a>
+        </div>
+        <!-- Buscador -->
+        <div class="search-wrap">
+          <div class="search">
+            <input
+              type="text"
+              class="search-term"
+              placeholder="Qué producto buscas?"
+            />
+            <button type="submit" class="searchButton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Links del nav -->
+        <div class="dropdown invisible">
+          <button class="link">
+            <i class="fa-solid fa-list"></i>
+            <a href="categorias.html" class="nav-subtitles">Categorías</a>
           </button>
-        </div>
-      </div>
-      <!-- Links del nav -->
-      <div class="dropdown invisible">
-        <button class="link">
-          <i class="fa-solid fa-list"></i>
-          <a href="categorias.html" class="nav-subtitles">Categorías</a>
-        </button>
-        <div class="dropdown-menu">
-          <a href="categorias.html#equipos" class="dropdown-links">Equipos y Notebooks</a>
-          <a href="categorias.html#sillas" class="dropdown-links">Sillas Gamer</a>
-          <a href="categorias.html#consolas" class="dropdown-links">Consolas</a>
-          <a href="categorias.html#monitores" class="dropdown-links">Monitores</a>
-          <a href="categorias.html#tarjetas" class="dropdown-links">Tarjetas gráficas</a>
-          <a href="categorias.html#all" class="dropdown-links"
-            >Ver todos los productos
-            <i class="fa-solid fa-arrow-right-to-bracket"></i
-          ></a>
-        </div>
-      </div>
-      <div class="dropdown invisible">
-        <button class="link">
-          <i class="fa-solid fa-circle-question"></i>
-          <a href="faq.html" class="nav-subtitles">Preguntas frecuentes</a>
-        </button>
-        <div class="dropdown-menu">
-          <a href="faq.html#faq-1" class="dropdown-links"
-            >Cómo realizar un pedido</a
-          >
-          <a href="faq.html#faq-2" class="dropdown-links">Formas de pago</a>
-          <a href="faq.html#faq-3" class="dropdown-links">Envíos</a>
-          <a href="faq.html#faq-4" class="dropdown-links">Garantías</a>
-          <a href="faq.html#faq-5" class="dropdown-links">Contáctanos</a>
-        </div>
-      </div>
-      <div class="dropdown invisible">
-        <button class="link">
-          <i class="fa-solid fa-user"></i>
-          <a href="#" class="nav-subtitles" id="login-title"
-            >Iniciar sesión</a
-          >
-        </button>
-        <!----------------------- Desde acá empieza el formulario ------------------------>
-        <div class="dropdown-menu container-form" id="container-sign-out">
-          <div class="container-form-ind login">
-            <form action="" class="login-form" method="post" id="login-form">
-              <h2 class="form-title">Iniciar sesión</h2>
-              <p class="form-text">Ingresa a tu cuenta</p>
-              <input
-                type="email"
-                placeholder="Email"
-                name="email"
-                id="email-login"
-                autocomplete="off"
-              />
-              <input
-                type="password"
-                placeholder="Contraseña"
-                name="contrasena"
-                id="pass-login"
-                autocomplete="off"
-              />
-              <input type="submit" value="Iniciar sesión" id="login-button" />
-              <p class="warnings" id="warning-login"></p>
-              <div class="form-bottom-content">
-                <div class="message">
-                  <p>¿Aún no tienes una cuenta?</p>
-                  <button class="sign-up-button the-sign-up-button">
-                    Regístrate acá
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="container-form-ind sign-up">
-            <form
-              action=""
-              class="login-form"
-              method="post"
-              id="sign-up-form"
+          <div class="dropdown-menu">
+            <a href="categorias.html#equipos" class="dropdown-links"
+              >Equipos y Notebooks</a
             >
-              <h2 class="form-title">Crea tu cuenta</h2>
-              <p class="form-text">Completa los campos</p>
-              <input
-                type="text"
-                placeholder="Nombre"
-                name="nombre"
-                id="name-signup"
-                autocomplete="off"
-              />
-              <input
-                type="text"
-                placeholder="Apellido"
-                name="apellido"
-                id="lname-signup"
-                autocomplete="off"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                name="email"
-                id="email-signup"
-                autocomplete="off"
-              />
-              <input
-                type="password"
-                placeholder="Contraseña"
-                name="contrasena"
-                id="pass-signup"
-                autocomplete="off"
-              />
-              <input type="submit" value="Registrarse" id="sign-up-button" />
-              <p class="warnings" id="warning-signup"></p>
-              <div class="form-bottom-content">
-                <div class="message">
-                  <p>¿Ya tienes una cuenta?</p>
-                  <button class="sign-up-button login-button">
-                    Iniciar sesión acá
-                  </button>
-                </div>
-              </div>
-            </form>
+            <a href="categorias.html#sillas" class="dropdown-links"
+              >Sillas Gamer</a
+            >
+            <a href="categorias.html#consolas" class="dropdown-links"
+              >Consolas</a
+            >
+            <a href="categorias.html#monitores" class="dropdown-links"
+              >Monitores</a
+            >
+            <a href="categorias.html#tarjetas" class="dropdown-links"
+              >Tarjetas gráficas</a
+            >
+            <a href="categorias.html#all" class="dropdown-links"
+              >Ver todos los productos
+              <i class="fa-solid fa-arrow-right-to-bracket"></i
+            ></a>
           </div>
         </div>
-        <!-------------------------- Acá termina el formulario --------------------------->
-      </div>
-      <a href="cart.html" class="link nav-subtitles invisible">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <label for="nav-cart">Carrito</label>
-      </a>
-      <!-------------- Cosas para la parte responsive del NAV  ------------------>
-      <button class="button-toggle" onclick="navMinimize()">
-        <i class="fa-solid fa-bars toggle-button"></i>
-      </button>
-    </nav>
-  </header>
-
-  <div class="small-container cart-page">
-
-    <table>
-      <tr>
-        <th>Producto</th>
-        <th>Cantidad</th>
-        <th>Subtotal</th>
-      </tr>
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/854/212/products/pc_amd-5341-14f3680d547a36881f16373415839435-640-0.png" alt="imagen producto">
-            <div>
-              <p>Computadora Ryzen 5</p>
-              <small>Precio: $240.000</small>
-              <br>
-              <a href="">Remover</a>
+        <div class="dropdown invisible">
+          <button class="link">
+            <i class="fa-solid fa-circle-question"></i>
+            <a href="faq.html" class="nav-subtitles">Preguntas frecuentes</a>
+          </button>
+          <div class="dropdown-menu">
+            <a href="faq.html#faq-1" class="dropdown-links"
+              >Cómo realizar un pedido</a
+            >
+            <a href="faq.html#faq-2" class="dropdown-links">Formas de pago</a>
+            <a href="faq.html#faq-3" class="dropdown-links">Envíos</a>
+            <a href="faq.html#faq-4" class="dropdown-links">Garantías</a>
+            <a href="faq.html#faq-5" class="dropdown-links">Contáctanos</a>
+          </div>
+        </div>
+        <div class="dropdown invisible">
+          <button class="link">
+            <i class="fa-solid fa-user"></i>
+            <a href="#" class="nav-subtitles" id="login-title"
+              >Iniciar sesión</a
+            >
+          </button>
+          <!----------------------- Desde acá empieza el formulario ------------------------>
+          <div class="dropdown-menu container-form" id="container-sign-out">
+            <div class="container-form-ind login">
+              <form action="" class="login-form" method="post" id="login-form">
+                <h2 class="form-title">Iniciar sesión</h2>
+                <p class="form-text">Ingresa a tu cuenta</p>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  id="email-login"
+                  autocomplete="off"
+                />
+                <input
+                  type="password"
+                  placeholder="Contraseña"
+                  name="contrasena"
+                  id="pass-login"
+                  autocomplete="off"
+                />
+                <input type="submit" value="Iniciar sesión" id="login-button" />
+                <p class="warnings" id="warning-login"></p>
+                <div class="form-bottom-content">
+                  <div class="message">
+                    <p>¿Aún no tienes una cuenta?</p>
+                    <button class="sign-up-button the-sign-up-button">
+                      Regístrate acá
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container-form-ind sign-up">
+              <form
+                action=""
+                class="login-form"
+                method="post"
+                id="sign-up-form"
+              >
+                <h2 class="form-title">Crea tu cuenta</h2>
+                <p class="form-text">Completa los campos</p>
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  name="nombre"
+                  id="name-signup"
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  placeholder="Apellido"
+                  name="apellido"
+                  id="lname-signup"
+                  autocomplete="off"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  id="email-signup"
+                  autocomplete="off"
+                />
+                <input
+                  type="password"
+                  placeholder="Contraseña"
+                  name="contrasena"
+                  id="pass-signup"
+                  autocomplete="off"
+                />
+                <input type="submit" value="Registrarse" id="sign-up-button" />
+                <p class="warnings" id="warning-signup"></p>
+                <div class="form-bottom-content">
+                  <div class="message">
+                    <p>¿Ya tienes una cuenta?</p>
+                    <button class="sign-up-button login-button">
+                      Iniciar sesión acá
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-        </td>
-        <td><input type="number" value="1"></td>
-        <td>$240.000</td>
-      </tr>
+          <!-------------------------- Acá termina el formulario --------------------------->
+        </div>
+        <a href="cart.html" class="link nav-subtitles invisible">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <label for="nav-cart">Carrito</label>
+        </a>
+        <!-------------- Cosas para la parte responsive del NAV  ------------------>
+        <button class="button-toggle" onclick="navMinimize()">
+          <i class="fa-solid fa-bars toggle-button"></i>
+        </button>
+      </nav>
+    </header>
 
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="https://langtecnologia.com.ar/2291-large_default/monitor-gamer-32-vga-hdmi-qhd-144hz-5ms-westinghouse.jpg" alt="imagen producto">
-            <div>
-              <p>MONITOR GAMER 145hz</p>
-              <small>Precio: $80.000</small>
-              <br>
-              <a href="">Remover</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1"></td>
-        <td>$80.000</td>
-      </tr>
-
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="https://www.xt-pc.com.ar/img/productos/Pics_Prod/ACC767.jpg" alt="imagen producto">
-            <div>
-              <p>Silla Raidmax</p>
-              <small>Precio: $40.000</small>
-              <br>
-              <a href="">Remover</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" value="1"></td>
-        <td>$40.000</td>
-      </tr>
-    </table>
-
-    <div class="total-price">
-
+    <div class="small-container cart-page">
       <table>
         <tr>
-          <td>Subtotal</td>
-          <td>$360.000</td>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
         </tr>
         <tr>
-          <td>Impuestos</td>
-          <td>$20.000</td>
+          <td>
+            <div class="cart-info">
+              <img
+                src="http://d3ugyf2ht6aenh.cloudfront.net/stores/854/212/products/pc_amd-5341-14f3680d547a36881f16373415839435-640-0.png"
+                alt="imagen producto"
+              />
+              <div>
+                <p>Computadora Ryzen 5</p>
+                <small>Precio: $240.000</small>
+                <br />
+                <a href="">Remover</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$240.000</td>
         </tr>
+
         <tr>
-          <td>Subtotal</td>
-          <td>$380.000</td>
+          <td>
+            <div class="cart-info">
+              <img
+                src="https://langtecnologia.com.ar/2291-large_default/monitor-gamer-32-vga-hdmi-qhd-144hz-5ms-westinghouse.jpg"
+                alt="imagen producto"
+              />
+              <div>
+                <p>MONITOR GAMER 145hz</p>
+                <small>Precio: $80.000</small>
+                <br />
+                <a href="">Remover</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$80.000</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img
+                src="https://www.xt-pc.com.ar/img/productos/Pics_Prod/ACC767.jpg"
+                alt="imagen producto"
+              />
+              <div>
+                <p>Silla Raidmax</p>
+                <small>Precio: $40.000</small>
+                <br />
+                <a href="">Remover</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$40.000</td>
         </tr>
       </table>
-    </div>
-    
-    <a class="compra_button" onclick="gracias()" href="index.html">Realizar compra</a>
-    <script>
-      function gracias() {
-        alert("Gracias por su compra! :)")
-      }
-    </script>
-  </div>
 
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$360.000</td>
+          </tr>
+          <tr>
+            <td>Impuestos</td>
+            <td>$20.000</td>
+          </tr>
+          <tr>
+            <td>Subtotal</td>
+            <td>$380.000</td>
+          </tr>
+        </table>
+      </div>
 
-  <footer>
-    <div class="footer-content">
-      <h3>DiTechno</h3>
-      <p>Para más info y consultas buscanos en nuestras redes sociales.¡Te esperamos!</p>
-      <ul class="socials">
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-      </ul>
+      <a class="compra_button" onclick="gracias()" href="index.html"
+        >Realizar compra</a
+      >
+      <script>
+        function gracias() {
+          alert("Gracias por su compra! :)");
+        }
+      </script>
     </div>
-    <div class="footer-bottom">
-      <p>copyright &copy;2022 DiTechno. designed by <span>J.E.L</span></p>
-    </div>
-  </footer>
-</body>
+
+    <footer>
+      <div class="footer-content">
+        <h3>DiTechno</h3>
+        <p>
+          Para más info y consultas buscanos en nuestras redes sociales.¡Te
+          esperamos!
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2022 DiTechno. designed by <span>J.E.L</span></p>
+      </div>
+    </footer>
+  </body>
 </html>
