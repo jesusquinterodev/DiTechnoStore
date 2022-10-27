@@ -1354,7 +1354,7 @@ th:last-child {
 .contact-form {
   background-color: #ac60ca;
   width: 1000px;
-  margin: 50px auto;
+  margin: 0 auto 50px;
   max-width: 97%;
   border-radius: 4px;
   padding: 55px 30px;
@@ -1466,7 +1466,7 @@ form .icons a:hover {
   }
 }
 
-.warnings {
+.warnings-b {
   width: 200px;
   text-align: center;
   margin: auto;
@@ -1501,4 +1501,7 @@ form .icons a:hover {
 .joke-button:active{
   opacity: 0.7;
   padding: 29px;
+}
+.action button:hover {
+  background-color: #4a00e0;
 }
