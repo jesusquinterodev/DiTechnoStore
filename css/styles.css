@@ -167,6 +167,7 @@ label {
 
 /* Formulario de inicio de sesión y registro */
 .container-form {
+  left: -60px;
   width: 17vw;
   text-align: center;
 }
@@ -1471,4 +1472,33 @@ form .icons a:hover {
   margin: auto;
   color: #ffffff;
   padding-top: 20px;
+}
+
+.joke-holder{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.joke-button {
+  padding: 30px;
+  background-color: #bc79e2;
+  color: #ffffff;
+  margin: 50px;
+  cursor: pointer;
+  transition: background-color 0.15s,
+              color 0.15s,
+              opacity 0.15s,
+              padding 0.15s;
+}
+
+.joke-button:hover{
+  background-color: #ffffff;
+  color: #bc79e2;
+}
+
+.joke-button:active{
+  opacity: 0.7;
+  padding: 29px;
 }
